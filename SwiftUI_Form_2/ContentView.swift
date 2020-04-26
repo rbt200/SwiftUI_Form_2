@@ -13,6 +13,8 @@ struct ContentView: View {
     @State private var images =
         ["🍏", "🍎", "🍐", "🍊"]
     
+    @State private var fruitVM: FruitViewModel = FruitViewModel()
+    
     var body: some View {
         
         NavigationView {
@@ -44,11 +46,25 @@ struct ContentView: View {
                         HStack {
                             Text(img)
                                 .font(.largeTitle)
-                            Text("Notification")
+                            
+//                            if self.fruitVM.fruit == img {
+                                Text(self.fruitVM.name)
+//                            } else {
+//                                Text("Notification")
+//                            }
+                            
+                        }
+                        .onTapGesture {
+                            self.fruitVM.showModel.toggle()
+                            self.fruitVM.fruit = img
+                            // FruitView()
                         }
                     }
+                    
                 }
-                
+                .sheet(isPresented: self.$fruitVM.showModel) {
+                    FruitDetailView(fruitVM: self.$fruitVM)
+                }
             }
             
         }

@@ -13,6 +13,8 @@
 		E626D28B2450B7C40008B8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E626D28A2450B7C40008B8AC /* Assets.xcassets */; };
 		E626D28E2450B7C40008B8AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E626D28D2450B7C40008B8AC /* Preview Assets.xcassets */; };
 		E626D2912450B7C40008B8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E626D28F2450B7C40008B8AC /* LaunchScreen.storyboard */; };
+		E626D2BE2455CBC20008B8AC /* FruitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D2BD2455CBC20008B8AC /* FruitViewModel.swift */; };
+		E626D2C12455CD930008B8AC /* FruitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D2C02455CD930008B8AC /* FruitDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E626D28D2450B7C40008B8AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E626D2902450B7C40008B8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E626D2922450B7C40008B8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E626D2BD2455CBC20008B8AC /* FruitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewModel.swift; sourceTree = "<group>"; };
+		E626D2C02455CD930008B8AC /* FruitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		E626D2832450B7C20008B8AC /* SwiftUI_Form_2 */ = {
 			isa = PBXGroup;
 			children = (
+				E626D2BF2455CC510008B8AC /* Models */,
+				E626D2BC2455CB350008B8AC /* ViewModels */,
 				E626D2842450B7C20008B8AC /* AppDelegate.swift */,
 				E626D2862450B7C20008B8AC /* SceneDelegate.swift */,
 				E626D2882450B7C20008B8AC /* ContentView.swift */,
@@ -73,6 +79,22 @@
 				E626D28D2450B7C40008B8AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E626D2BC2455CB350008B8AC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E626D2BD2455CBC20008B8AC /* FruitViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E626D2BF2455CC510008B8AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E626D2C02455CD930008B8AC /* FruitDetailView.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E626D2852450B7C20008B8AC /* AppDelegate.swift in Sources */,
+				E626D2BE2455CBC20008B8AC /* FruitViewModel.swift in Sources */,
 				E626D2872450B7C20008B8AC /* SceneDelegate.swift in Sources */,
+				E626D2C12455CD930008B8AC /* FruitDetailView.swift in Sources */,
 				E626D2892450B7C20008B8AC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
